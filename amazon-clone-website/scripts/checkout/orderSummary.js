@@ -15,6 +15,7 @@ export function renderOrderSummary() {
 
 
         const matchingProduct = getProduct(productId);
+        
 
         const deliveryOptionId  = cartItem.deliveryOptionId;
 
@@ -69,7 +70,7 @@ export function renderOrderSummary() {
                     ${deliveryOptionsHTML(matchingProduct, cartItem)}
                 </div>
                 </div>
-            </div>
+              </div>
             
             `;
         });

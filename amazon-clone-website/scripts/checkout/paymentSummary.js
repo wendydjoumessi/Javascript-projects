@@ -69,11 +69,12 @@ export function renderPaymentSummary() {
                 'Content-Type' : 'application/json'
               },
               body: JSON.stringify({
-                cart: cart
+                cart: cart,
               })
              });
              const order = await response.json();
               addOrder(order);
+              console.log(order)
           } catch (error) {
             console.log('Unexpected error. Please try again later')
           }
